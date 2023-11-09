@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        width: 100vw;
+        height: 100vh;
+        background-color: beige;
+        border: 2px solid black;
+      }
+      .box {
+        width: 250px;
+        height: 80px;
+        background-color: greenyellow;
+        border: 1px solid black;
+        border-radius: 1px;
+        margin: 10px;
+        position: relative;
+        /* animation: slideInFromBottom 3s ease-in-out forwards; */
+        animation-name: RightMovement;
+        animation-duration: 3s;
+        animation-delay: 1s;
+        animation-timing-function: linear;
+        animation-iteration-count: 4;
+        animation-direction: alternate;
+        /* animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1); */
+      }
+      .box2 {
+        width: 250px;
+        height: 80px;
+        background-color: greenyellow;
+        border: 1px solid black;
+        border-radius: 1px;
+        margin: 10px;
+        position: relative;
+        animation-name: leftMovement;
+        animation: leftMovement 3s linear 1s 4 alternate backwards;
+      }
+      #box1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        color: blue;
+      }
+      #box2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        color: red;
+      }
+      .circle {
+        width: 100px;
+        height: 100px;
+        background-color: rgb(47, 255, 252);
+        border: 2px solid black;
+        border-radius: 50px;
+        margin: 10px;
+        position: relative;
+        top: 15%;
+        left: 600px;
+      }
+
+      @keyframes RightMovement {
+        from {
+          top: 0;
+          left: 0;
+        }
+        to {
+          top: 0;
+          left: 1000px;
+        }
+      }
+
+      @keyframes leftMovement {
+        from {
+          top: 400px;
+          left: 1000px;
+        }
+        to {
+          top: 400px;
+          left: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box" id="box1">Animation</div>
+      <div class="box2" id="box2">Aniamtion</div>
+      <div class="circle"></div>
+    </div>
+  </body>
+</html>

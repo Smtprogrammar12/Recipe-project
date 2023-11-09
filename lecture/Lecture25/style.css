@@ -1,0 +1,36 @@
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color: beige;
+    border: 2px solid black;
+    display: flex;
+        justify-content: center;
+        align-items: center;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box{
+    width: 250px;
+    height: 250px;
+    background-color: red;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 4s linear 1s ;
+}
+
+.box:hover{
+    /* transform: scale(2.1); */
+    /* transform: rotate(-45deg); */
+    /* transform: rotate(45deg); */
+    /* transform: skewY(30deg); */
+    /* transform: translateX(100%); */
+    /* transform: skewY(90deg); */
+    /* transform: skewX(60deg); */
+    /* transform: translate(200px , -200px); */
+}

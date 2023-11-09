@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <form>
+      <h1>Event Register</h1>
+
+      <label for="name">Name:</label>
+      <br />
+      <input type="text" name="name" id="name" placeholder="Enter name" />
+
+      <br />
+      <br />
+      <label for="email">Email:</label>
+      <br />
+      <input type="text" id="email" name="email" , placeholder="Enter Email" />
+      <br />
+      <br />
+
+      <label for="phone">Phone:</label>
+      <br />
+      <input type="tel" id="phone" name="phone" />
+      <br />
+      <br />
+
+      <label for="occupation">Occupation:</label>
+      <br />
+      <select id="occupation" name="occupation">
+        <option value="other">Other</option>
+        <option value="student">Student</option>
+        <option value="employed">Employed</option>
+        <option value="unemployed">Unemployed</option>
+        <option value="self-learner">Self-Learner</option>
+      </select>
+
+      <p>Topic of interseted</p>
+
+      <input type="checkbox" id="check" name="check" />
+      <label for="check">HTML</label>
+      <br />
+      <br />
+      <input type="checkbox" id="check1" name="check1" />
+      <label for="check1">CSS</label>
+
+      <br />
+      <br />
+      <input type="checkbox" id="check2" name="check2" />
+      <label for="check2">JAVASCRIPT</label>
+      <br />
+      <br />
+      <label for="textarea">Comments</label>
+      <br />
+      <textarea
+        name="textarea"
+        id="textarea"
+        cols="30"
+        rows="10"
+        placeholder="start from here..."
+      ></textarea>
+
+      <input type="button" value="Register" />
+    </form>
+  </body>
+</html>

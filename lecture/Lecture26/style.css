@@ -1,0 +1,125 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-x: hidden;
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    /* display: flex; */
+    /* justify-content: center;
+        align-items: center; */
+        overflow-x: none;
+        background-color: #8EC5FC;
+            background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+
+}
+.navContainer{
+    width: 100vw;
+    background: linear-gradient(to right, #33ccff 0%, #00ffff 100%);
+    height: 60px;
+
+}
+#navList {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+#listlogo1{
+    font-size: 2rem;
+    /* margin: 5px; */
+    padding: 5px;
+    padding-left: 15px;
+    margin-top: 3px;
+   color: rgb(240, 255, 255);
+}
+
+#listlogo2{
+    font-size: 1.5rem;
+    padding: 5px;
+    padding-right: 25px;
+    display: flex;
+    gap: 30px;
+    margin-top: 5px;
+    color: rgb(240, 255, 255);
+ 
+
+}
+a{
+    text-decoration:none;
+}
+.footerItem{
+    background: linear-gradient(to right, #33ccff 0%, #00ffff 100%);
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footerItem p{
+    color: azure;
+    
+}
+.contentContainer{
+    width: 60%;
+    border: 1px solid black;
+    margin: auto;
+    /* background-color: white; */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+
+}
+.item{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.rightbox img{
+    height: 250px;
+    border-radius: 20px;
+    padding-top: 10px;
+    transition: all .7s ease-in-out;
+}
+.rightbox :hover{
+    transform: scale(1.1);
+    /* background-color: rgb(84, 76, 76); */
+    
+   
+}
+
+/* 
+ #imgSecond{
+    padding-bottom: 10px;
+     
+} */
+.rightbox{
+position: relative;
+    
+}
+.rightbox .overlay{
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    color: white;
+    height: 100%;
+    width: 100%;
+    font-size: 1.1em;
+    /* text-align: center; */
+    /* background-color: rgba(80, 65, 65, 0.907); */
+}
+
+.rightbox .overlay :hover{
+box-shadow: inset 5em 1em rgb(123, 119, 119);
+}
+
+button :hover{
+    cursor: pointer;
+    color: #00ffff; 
+    
+}
