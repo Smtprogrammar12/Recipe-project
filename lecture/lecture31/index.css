@@ -1,0 +1,14 @@
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color: aquamarine;
+    position: sticky;
+    
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+p {
+    animation: 3s infinite alternate slidein;
+}
